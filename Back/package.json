@@ -1,0 +1,19 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "down.js",
+  "scripts": {
+    "dev": " nodemon ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "ytdl-core": "^4.11.4",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
