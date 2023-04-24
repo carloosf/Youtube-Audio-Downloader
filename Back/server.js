@@ -20,8 +20,6 @@ app.get('/', async (req, res) => {
     ytdl(videoUrl, { filter: 'audioonly' })
       .pipe(fs.createWriteStream(destPath))
       .on('finish', () => console.log(`${videoTitle} saved!`));
-
-    res.send(`Downloading ${videoTitle}`);
   } catch (err) {
     console.error(err);
     res.status(500).send('Internal Server Error');
