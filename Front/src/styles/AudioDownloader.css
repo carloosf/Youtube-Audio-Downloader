@@ -1,0 +1,35 @@
+:root {
+    --primary-color: brown;
+}
+
+.formUrl {
+    display: grid;
+    grid-template-columns: 100fr 1fr;
+    border: 1px solid var(--primary-color);
+    border-radius: 0px 10px 10px 0px;
+
+    margin-inline: 2rem;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.formUrl * {
+    padding: 10px;
+    font-size: medium;
+    border: none;
+}
+
+.formUrl button {
+    color: white;
+    background-color: var(--primary-color);
+    font-weight: 700;
+}
+
+.formUrl input {
+    outline: none;
+}
+
+h1 {
+    color: brown;
+    margin: 0;
+}
