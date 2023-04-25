@@ -3,33 +3,39 @@
 }
 
 .formUrl {
-    display: grid;
-    grid-template-columns: 100fr 1fr;
-    border: 1px solid var(--primary-color);
-    border-radius: 0px 10px 10px 0px;
-
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
     margin-inline: 2rem;
-    overflow: hidden;
+    gap: 20px;
     transition: 1s;
 }
 
-.formUrl * {
+.inputUrl * {
     padding: 10px;
     font-size: medium;
     border: none;
 }
 
-.formUrl button {
+.inputUrl button {
     color: white;
     background-color: var(--primary-color);
     font-weight: 700;
 }
 
-.formUrl input {
+.inputUrl input {
     outline: none;
 }
 
+.inputUrl{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 100fr 1fr;
+}
+
 h1 {
+text-shadow: 1px 1px 5px  rgb(0, 0, 0);
     color: brown;
     margin: 0;
 }

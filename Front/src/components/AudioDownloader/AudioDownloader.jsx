@@ -19,18 +19,19 @@ function AudioDownloader() {
     }
 
     return (
-        <div>
-            <h1>YouTube Audio Downloader</h1>
             <form className='formUrl'>
-                <input
-                    type="text"
-                    value={url}
-                    onChange={e => setUrl(e.target.value)}
-                    placeholder='Insira o link do video...'
-                />
-                <button onClick={handleDownload}>Enviar</button>
+                <h1>YouTube Audio Downloader</h1>
+
+                <div className='inputUrl'>
+                    <input
+                        type="text"
+                        value={url}
+                        onChange={e => setUrl(e.target.value)}
+                        placeholder='Insira o link do video...'
+                    />
+                    <button onClick={handleDownload}>Enviar</button>
+                </div>
             </form>
-        </div>
     );
 }
 
