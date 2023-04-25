@@ -1,12 +1,14 @@
 import './styles/App.css';
-import AudioDownloader from './components/AudioDownloader/AudioDownloader';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Content from './components/Content/Content';
 
 function App() {
   return (
     <div className='App'>
-    <header></header>
-      <AudioDownloader />
-      <footer></footer>
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
